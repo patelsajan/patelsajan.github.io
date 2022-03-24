@@ -1,0 +1,31 @@
+@font-face {
+    font-family: hack_regular;
+    src: url(./fonts/hack/Hack-Regular.ttf);
+}
+
+@font-face {
+    font-family: hack_bold;
+    src: url(./fonts/hack/Hack-Bold.ttf);
+}
+
+*{
+    font-family: hack_regular;
+}
+
+body {
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+#disc {
+  background-color:black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
