@@ -12,10 +12,35 @@
     font-family: hack_regular;
 }
 
-body {
-  overflow: hidden;
+body{
+	padding: 0px;
+	margin:0px;
+}
+
+#main {
+  //overflow: hidden;
   background-color: black;
   color: white;
+  padding: 0px;
+  height: auto;
+}
+
+#header {
+	height: 5%;
+	width: 100%;
+	background: pink;
+	position: absolute;
+	top: 0px;
+}
+
+#hamburger {
+	height: 100%;
+	width: 5%;
+	float: right;
+	background-image: url('./assets/hamburger_icon.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #disc {
@@ -28,4 +53,15 @@ body {
   align-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.menu {
+	position: absolute;
+	right :0px;
+	top: 5%;
+	height: 95%;
+	width: 0%;
+	transition: width 0.5s;
+	border-left: 2px solid white;
+	//background-color: white !important;
 }
