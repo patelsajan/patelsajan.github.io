@@ -4,8 +4,6 @@ let hamburger_icon = document.getElementById('hamburger');
 // actuate menu on click
 let isMenuOpen = false;
 hamburger_icon.addEventListener('click', event=> {
-	//console.log('menu::', menu);
-	//console.log('hamburger::', hamburger);
 	isMenuOpen = !isMenuOpen;
 	if(!isMenuOpen) {
 		menu.style.width = '0%';
@@ -22,6 +20,7 @@ for(index in menu_items) {
 	div.className = 'menu_item';
 	div.innerHTML = item['name'];
 	menu.appendChild(div);
-	if(item.hasOwnProperty('child')) {
+	if(item.hasOwnProperty('children')) {
+		console.log(item['children']);
 	}
 }
