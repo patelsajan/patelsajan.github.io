@@ -21,8 +21,20 @@ var menu_items = {
 		'name': 'Projects',
 		'children':[
 			{
-			'name': 'test_name',
-			'path':  './test.html'
+				"name": "wave function collapse",
+				"path": "https://github.com/patelsajan/wave_function_collapse_js_canvas"
+			},
+			{
+				'name': 'wordle_clone',
+				'path': 'https://github.com/patelsajan/wordle_clone' 
+			},
+			{
+				"name": "2048",
+				"path": "https://github.com/patelsajan/2048"
+			},
+			{
+				"name": "test_file",
+				"path": "https://patelsajan.github.io/test.html"
 			}
 		]
 	},
