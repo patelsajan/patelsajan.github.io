@@ -13,12 +13,18 @@ hamburger_icon.addEventListener('click', event=> {
 });
 
 // populate menu items
+// the details for the menu items are taken from app/menu_items.js file
 console.log('menu_items', menu_items);
 for(index in menu_items) {
 	let item = menu_items[index];
 	let div = document.createElement('div');
 	div.className = 'menu_item';
-	//div.innerHTML = item['name'];
+	createNodes(item, div);
+	menu.appendChild(div);
+}
+
+// create nodes from each item or child.
+function createNodes(item, div) {
 	let button = document.createElement('button');
 	button.innerHTML = item.name;
 	div.appendChild(button);
@@ -36,7 +42,6 @@ for(index in menu_items) {
 			child_div.appendChild(child_anchor);
 		}
 	}
-	menu.appendChild(div);
 }
 
 //actuate menu items.
